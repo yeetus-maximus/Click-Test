@@ -1,3 +1,3 @@
 # Click-Test
-Test Click spped
+Test Click speed
 W.I.P.
