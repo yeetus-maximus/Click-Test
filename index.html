@@ -1,0 +1,38 @@
+main(x-data="clickSpeedTest()" x-init="restart()")
+
+  header
+    p 
+      span
+        abbr(title="Clicks Per Second") CPS
+      br
+      b(x-text="cpsDisplay")
+      
+    div
+      
+    p 
+      span CPS MAX
+      br
+      b(x-text="cpsMaxDisplay")
+      
+  
+  button(
+    x-ref="btn"
+    @mousedown="mouseDown"
+    @mouseup="mouseUp"
+    :style="`--cps: ${cps}`"
+  )
+  
+
+  footer
+    p 
+      span Clicks
+      br
+      b(x-text="clicks")
+      
+    div
+      
+    p 
+      span Time
+      br
+      b(x-text="activeTimeDisplay")
+      sub s
